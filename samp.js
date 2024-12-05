@@ -69,5 +69,13 @@
 // console.log(10==11 || 10==1);
 
 
+// -------function-----------
+
+function fun1(){
+    let a=parseInt(document.getElementById("demo").value)
+    console.log(typeof a);
+    console.log('welcome');
+    
+}
 
 
