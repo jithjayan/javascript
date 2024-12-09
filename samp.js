@@ -71,11 +71,31 @@
 
 // -------function-----------
 
-function fun1(){
-    let a=parseInt(document.getElementById("demo").value)
-    console.log(typeof a);
-    console.log('welcome');
+// function fun1(){
+//     let a=parseInt(document.getElementById("demo").value)
+//     console.log(typeof a);
+//     console.log('welcome');
     
-}
+// }
+
+// ------------------loop-----------------
+
+// for(let i=0;i<=10;i++){
+//     console.log(i);
+    
+// }
 
 
+// let i=0
+// while(i<=10){
+//     console.log(i);
+//     i++
+    
+// }
+
+// let i=0
+// do{
+//     console.log(i);
+//     i++
+// }
+// while(i<=10)
