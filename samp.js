@@ -78,6 +78,26 @@
     
 // }
 
+
+// let sample1=function(){
+    // console.log("sample1");
+    // 
+// }
+// sample1()
+// 
+
+
+// let sample2=()=>console.log("sample2");
+
+// let sample2=()=>{
+//     console.log("multi sample2");
+//     console.log("add");
+    
+// }
+
+
+// sample2()
+
 // ------------------loop-----------------
 
 // for(let i=0;i<=10;i++){
@@ -99,3 +119,57 @@
 //     i++
 // }
 // while(i<=10)
+
+
+// let l=[1,2,3,4,5]
+// let l={name:"EVY",age:22}
+// for (i in l){
+//     console.log(i);
+    
+// }
+
+// for (i of l){
+//     console.log(i);
+    
+// }
+
+// ---------String methods--------
+
+// let a="             welcome           "
+// console.log(a.length);
+// console.log(a.charAt(5));
+// console.log(a.concat(' ','hi'));
+// console.log(a.endsWith('e'));
+// console.log(a.startsWith('w'));
+// console.log(a.slice(0,4));
+// console.log(a.trim());
+// console.log(a.trimStart());
+// console.log(a.trimEnd());
+
+// ---------array methods----------
+
+// l=[1,2,3,4,5]
+
+// l.pop()
+// console.log(l);
+// console.log(l.length);
+// console.log(l.at(2));
+// l.push([6,7])
+// console.log(l);
+
+// l.shift()
+// l.unshift(10)
+
+// l[0]=88
+// console.log(l);
+
+
+
+
+
+
+
+
+
+
+
