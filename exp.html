@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <div style="display: flex; white-space: nowrap;"><h1 id="tmr"></h1><h1></h1><h1 id="tmr2"></h1></div> -->
+    <h1 id="tmr"></h1>
+    
+    <script>
+        // try{
+        //     console.log(a);
+            
+        // }
+        // catch(error){
+        //     console.log('error',error.message);
+            
+        // }
+        // finally{
+        //     console.log('prgm ends');
+            
+        // }
+
+// ----------
+
+        // console.log('start');
+        // for(i=0;i<=100;i++){
+        //     console.log(i);
+            
+        // }
+        // console.log('end');
+// -----
+        // console.log('start');
+        // setTimeout(() => {
+        //     console.log('timer');
+            
+        // }, 2000);
+        // console.log('end');
+        
+// -----------
+
+        // let count=10
+        // let data=setInterval(() => {
+
+        //     document.getElementById("tmr").innerHTML=count
+        //     // console.log(count);
+            
+        //     count--
+        //     if(count<0){
+        //         clearInterval(data)
+        //         // document.getElementById("tmr").innerHTML='hai'
+        //     }
+        // }, 1000);
+
+// -------
+
+let count=5
+let min=2
+        let data=setInterval(() => {
+
+            document.getElementById("tmr").innerHTML=min +':'+count
+            count--
+
+            if(count<0){
+                clearInterval(data)
+            }
+           
+
+        }, 1000);
+        
+    </script>
+</body>
+</html>
