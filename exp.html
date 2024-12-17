@@ -9,6 +9,9 @@
    <!-- <div style="display: flex; white-space: nowrap;"><h1 id="tmr"></h1><h1></h1><h1 id="tmr2"></h1></div> -->
     <h1 id="tmr"></h1>
     
+    <img id="img" src="pexels-rickyrecap-2560900.jpg" alt="" style="height: 400px;width: 700px;">
+    <img id="img2" src="many-pink-flowers-growing-green-twigs-with-drops.jpg" alt="" style="height: 400px;width: 700px; display: none; ">
+
     <script>
         // try{
         //     console.log(a);
@@ -56,15 +59,22 @@
 
 // -------
 
-let count=5
-let min=2
+let count=3
+let min=1
         let data=setInterval(() => {
 
             document.getElementById("tmr").innerHTML=min +':'+count
             count--
 
             if(count<0){
-                clearInterval(data)
+                min--
+                count=5
+                if (min<0){
+                    clearInterval(data)
+                    document.getElementById("img").style.display='none'
+                    document.getElementById("img2").style.display='block'
+                    
+                }
             }
            
 

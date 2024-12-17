@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <form action="">
+        <input type="text"  id="" placeholder="name" required>
+        <input type="tel" name="" id="" placeholder="ph.number" required pattern="^[6-9]\d{9}">
+
+        <input type="submit" value="Add">
+    </form> -->
+
+
+    <form action="" id="form">
+        <input type="text"  id="" placeholder="name" required>
+        <input type="tel" name="" id="no" placeholder="ph.number" required >
+        <input type="password" name="" id="pasd" placeholder="password">
+        <h3 id="h3"></h3>
+        <input type="submit" value="Add">
+    </form>
+
+<SCript>
+    document.getElementById("form").addEventListener('submit',function(event){
+        event.preventDefault()
+        let no=document.getElementById("no").value
+        let h3=document.getElementById("h3")
+        let pasd=document.getElementById("pasd").value
+        if(/^[6-9]\d{9}/.test(no)){
+            h3.innerHTML='valid'
+            h3.style.color='green'
+        }
+        else
+        {
+            h3.innerHTML='invalid'
+            h3.style.color='red'           
+        }
+        if(/[A-Z]/)
+    })
+
+</SCript>
+
+</body>
+</html>
