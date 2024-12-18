@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        li{
+            color: red;
+        }
+    </style>
 </head>
 <body>
 
@@ -14,32 +19,80 @@
         <input type="submit" value="Add">
     </form> -->
 
-
+<!-- 
     <form action="" id="form">
-        <input type="text"  id="" placeholder="name" required>
-        <input type="tel" name="" id="no" placeholder="ph.number" required >
-        <input type="password" name="" id="pasd" placeholder="password">
+        <input type="text"  id="" placeholder="name" required><br><br>
+        <input type="tel" name="" id="no" placeholder="ph.number" required ><br><br>
+        <input type="password" name="" id="pasd" placeholder="password" required><br><br>
         <h3 id="h3"></h3>
+        <ul>
+            <li id="len">min length 8 char</li>
+            <li id="cap">min 1 cap letter</li>
+            <li id="sma">min 1 sml letter</li>
+            <li id="num">min 1 num</li>
+            <li id="spl">min 1 spl char</li>
+        </ul>
         <input type="submit" value="Add">
-    </form>
+    </form> -->
+
+
 
 <SCript>
-    document.getElementById("form").addEventListener('submit',function(event){
-        event.preventDefault()
-        let no=document.getElementById("no").value
-        let h3=document.getElementById("h3")
-        let pasd=document.getElementById("pasd").value
-        if(/^[6-9]\d{9}/.test(no)){
-            h3.innerHTML='valid'
-            h3.style.color='green'
-        }
-        else
-        {
-            h3.innerHTML='invalid'
-            h3.style.color='red'           
-        }
-        if(/[A-Z]/)
-    })
+    // document.getElementById("form").addEventListener('submit',function(event){
+    //     event.preventDefault()
+    //     let no=document.getElementById("no").value
+    //     let h3=document.getElementById("h3")
+    //     let pasd=document.getElementById("pasd")
+    //     let len=document.getElementById("len")
+    //     let cap=document.getElementById("cap")
+    //     let sma=document.getElementById("sml")
+    //     let num=document.getElementById("num")
+    //     let spl=document.getElementById("spl")
+
+    //     if(/^[6-9]\d{9}/.test(no)){
+    //         h3.innerHTML='valid'
+    //         h3.style.color='green'
+    //     }
+    //     else
+    //     {
+    //         h3.innerHTML='invalid'
+    //         h3.style.color='red'           
+    //     }
+    //     })
+    //     pasd.addEventListener('input',function(){
+    //         let password=pasd.value
+    //         len.style.color=password.length>=8?'green':'red'
+    //         cap.style.color=/[A-Z]/.test(password)?'green':'red'
+    //         sma.style.color=/[a-z]/.test(password)?'green':'red'
+    //         num.style.color=/\d/.test(password)?'green':'red'
+    //         spl.style.color=/[@#$%*&]/.test(password)?'green':'red'
+            
+
+    //     })
+
+
+class school{
+    constructor(){
+        this.clg='ekm'
+    }
+}
+
+class std extends school{
+    constructor(std_name,std_cur){
+        super()
+        this.std_name=std_name
+        this.std_cur=std_cur
+        this.notes='python django'
+
+    }
+    display(){
+        console.log(this.std_name,this.std_cur,this.clg,this.notes);
+        
+    }
+
+}
+let std1=new std('manu','py')
+std1.display()
 
 </SCript>
 
