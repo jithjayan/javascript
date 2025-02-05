@@ -4,12 +4,15 @@ function Display(){
     tbody.innerHTML=''
     data.forEach(element=>{
         let tr=document.createElement("tr")
+
         let id_td=document.createElement("td")
         id_td.innerHTML=element.id
         tr.appendChild(id_td)
+
         let name_td=document.createElement("td")
         name_td.innerHTML=element.name
         tr.appendChild(name_td)
+
         let age_td=document.createElement("td")
         age_td.innerHTML=element.age
         tr.appendChild(age_td)

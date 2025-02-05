@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* -----------------userprofile-------------------- */
+.userpbody{
+
+background-color: #bee6c0;
+}    
+.usrdiv1{
+margin-top: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+background-color: #f7f7f7;
+}
+
+.usrdiv2{
+margin-top: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+height: 50px;
+background-color: #f7f7f7;
+
+}
+
+.usrdiv3{
+margin-top: 1px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+text-align: center;
+background-color: #f7f7f7;
+
+}
+
+.usrdiv4{
+margin-top: 10px;
+height: 30px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+text-align: center;
+background-color: #f7f7f7;
+
+}
+
+#usrdiv5{
+margin-top: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+background-color: #f7f7f7;
+
+
+}
+</style>
+<body>
+    
+<div class="container"  >
+    <div class="row">
+      <div class="col-lg-3" style=" width: 30%; ">
+        <div class="usrdiv1">
+          <img src="{% static 'images/prfl.webp' %}" alt="" style="height: 50px; width: 50px;"> 
+          <p>Hello,user</p>
+        </div>
+        <!-- <a href="" style="text-decoration: none; color: black;">  -->
+        <div class="usrdiv2">
+          <i class="fa-solid fa-truck-fast" style="margin-right: 20px;margin-left: 10%;" ></i> ORDERS
+        </div></a>
+        <div class="usrdiv3">
+          <p>ACCOUNT SETTINGS</p>
+          <a href="" style="text-decoration: none; color: black;"> <div>Profile information</div></a>
+          <a href="adrs" style="text-decoration: none; color: black;"><div> Manage Address </div></a>
+        </div>
+        <div class="usrdiv4">
+          <a href="user_logout" style="text-decoration: none; color: black;"> <div> <i class="fa-solid fa-power-off"></i>logout</div></a>
+        </div>
+      </div>
+      <div class="col-lg-7" id="usrdiv5">
+        <div class="row" style="margin-top: 20px;">
+          <form action="">
+            <label for="">First Name</label>
+            <input type="text" placeholder="name" value="" id=f_name>
+
+            <label for="" style="margin-left: 40px;">Last Name</label>
+            <input type="text" placeholder="name" value="" id="l_name"><br><br>
+
+            <label for="">Email Address</label><br>
+            <input type="email" placeholder="email" value="" id="e_mail"><br><br>
+
+            <label for="">Number</label>
+            <input type="number" name=""  placeholder="Contact Number" id="c_num" >
+
+            <label for="" style="margin-left: 40px;">DOB</label>
+            <input type="date" name="" id="dob" ><br><br>
+
+
+          </form>
+        </div>
+      </div>
+    </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="user.js"></script>
+</body>
+</html>
